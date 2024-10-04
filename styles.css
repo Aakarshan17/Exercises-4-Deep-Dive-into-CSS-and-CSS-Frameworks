@@ -1,0 +1,92 @@
+:root{
+    --primary-color: #a197fa;
+    --secondary-color: #002507db;
+    --font-color: rgb(0, 0, 0);
+    --font-size-medium: 20px;
+    --font-size-large: 25px;
+    --background-color: rgba(255, 255, 255, 0.642);
+}
+
+.header {
+    background-color: var(--background-color);
+    color: var(--secondary-color);
+    text-align: center;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--font-color);
+    
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+    font-size: var(--font-size-large);
+    color: var(--secondary-color);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-item {
+    flex: 1;
+    padding: 10px;
+    background-color: lightblue;
+    margin: 5px;
+}
+
+.flex-item h3 {
+    font-size: var(--font-size-large);
+    color: darkblue;
+}
+
+.flex-item p {
+    font-size: var(--font-size-small);
+    color: darkgreen;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-item {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.relative-container {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+}
+
+.absolute-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px;
+
+}
